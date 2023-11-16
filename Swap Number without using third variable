@@ -1,0 +1,14 @@
+# Input two numbers from the user
+x = int(input("Enter First number: "))
+y = int(input("Enter Second number: "))
+
+# Display the original values
+print("Original values:", x, y)
+
+# Swapping without a temporary variable
+x = x + y  # Sum of both numbers and stored in x
+y = x - y  # New value of y becomes the original value of x
+x = x - y  # New value of x becomes the original value of y
+
+# Display the swapped values
+print("Swapped values:", x, y)
